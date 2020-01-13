@@ -35,6 +35,10 @@ subprojects {
                     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
                 }
             }
+
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+            }
         }
     }
 }

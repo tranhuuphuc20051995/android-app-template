@@ -1,5 +1,5 @@
 package dev.alejandrorosas.apptemplate
 
-import dev.alejandrorosas.core.BaseActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : BaseActivity(R.layout.activity_main)
+class MainActivity : AppCompatActivity(R.layout.activity_main)
