@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation rootProject.ext.kotlin
+    implementation project(":core")
+
+    implementation rootProject.ext.appcompat
+    implementation rootProject.ext.core
+    implementation rootProject.ext.dagger
+    implementation rootProject.ext.hilt
+    implementation rootProject.ext.androidXHilt
+    implementation rootProject.ext.navigationFragment
+    implementation rootProject.ext.navigationUi
+
+    kapt rootProject.ext.daggerCompiler
+    kapt rootProject.ext.hiltCompiler
+    kapt rootProject.ext.androidXHiltCompiler
+
+    testImplementation rootProject.ext.junit
+}

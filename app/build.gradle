@@ -24,7 +24,8 @@ android {
 
 dependencies {
     implementation project(':core')
-    implementation project(':features:feature-template')
+    implementation project(':features:home')
+    implementation project(':features:login')
 
     implementation rootProject.ext.kotlin
     implementation rootProject.ext.appcompat
@@ -33,6 +34,8 @@ dependencies {
     implementation rootProject.ext.dagger
     implementation rootProject.ext.hilt
     implementation rootProject.ext.androidXHilt
+    implementation rootProject.ext.navigationFragment
+    implementation rootProject.ext.navigationUi
 
     kapt rootProject.ext.daggerCompiler
     kapt rootProject.ext.hiltCompiler
